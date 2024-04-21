@@ -1,0 +1,6 @@
+_target_: data.feature_provider.FeaturesFromFolder
+cache_dir: ${hydra:runtime.cwd}/cache
+fe_tag: VAE
+resize: ${resize}
+device: ${device}
+save_in_memory: True

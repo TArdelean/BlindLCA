@@ -1,0 +1,6 @@
+_target_: data.feature_provider.WideFeatures
+cache_dir: ${hydra:runtime.cwd}/cache
+resize: ${resize}
+device: ${device}
+save_on_disk: True
+save_in_memory: True

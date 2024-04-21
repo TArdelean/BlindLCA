@@ -1,0 +1,9 @@
+name: MTD
+provider:
+  _target_: data.DatasetProvider
+  dataset_class:
+    _target_: hydra.utils.get_class
+    path: data.MTDDataset
+  feature_provider: ${feature_provider}
+  data_root: ${hydra:runtime.cwd}/datasets/MTD
+  resize: ${resize}

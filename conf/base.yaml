@@ -1,0 +1,18 @@
+device: cuda
+resize: 512
+save_alpha_unit: True
+save_alpha_tiff: False
+clustering: ward
+
+defaults:
+  - _self_
+  - method: ???
+  - dataset: ???
+  - feature_provider: wide
+
+
+hydra:
+  job:
+    chdir: True
+  run:
+    dir: ./outputs/${method.name}_${dataset.name}_${now:%Y-%m-%d}_${now:%H-%M-%S}

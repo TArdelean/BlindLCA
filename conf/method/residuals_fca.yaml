@@ -1,0 +1,6 @@
+_target_: methods.ResidualsFCA
+name: "ResidualsFCA"
+tau: 0.002
+other_tag: "Wide_ResNet50_2_Weights_V1_6_512"
+subtract_mean: True
+scale_features: False

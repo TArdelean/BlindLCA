@@ -1,0 +1,10 @@
+name: mvtec
+provider:
+  _target_: data.DatasetProvider
+  dataset_class:
+    _target_: hydra.utils.get_class
+    path: data.MVTecDataset
+  feature_provider: ${feature_provider}
+  data_root: ${hydra:runtime.cwd}/datasets/mvtec_anomaly_detection
+  resize: ${resize}
+  exclude_combined: True

@@ -1,0 +1,7 @@
+_target_: methods.OurBLCA
+name: "OurBLCA"
+tau: 0.002
+contrast_tag: "contrast"
+subtract_mean: True
+scale_features: False
+contrast_ep: 10
